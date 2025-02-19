@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/merry"
+    android:padding="10dp">
+
+    <!-- Top Buttons and TextView -->
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/topTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:text="ስብሓተ ያሬድ"
+            android:textColor="@android:color/system_on_primary_dark"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="10">
+
+        <!-- Left Side Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/leftButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="መዝሙር"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/leftButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="እስመለአለም"
+                android:layout_marginBottom="8dp"/>
+
+
+        </LinearLayout>
+
+        <!-- Right Side Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rightButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="መልክመልክእአ " />
+
+            <Button
+                android:id="@+id/rightButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="ባህረ ሓሳብ" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
